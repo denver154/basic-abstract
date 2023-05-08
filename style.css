@@ -217,7 +217,8 @@
   width: 800px;
 }
 .banner .banner__wrapper .banner__form .banner__search:hover{
-  border-color: aqua;
+  border-color: #4C5FD5 !important;
+  outline: none;
 }
   
 .banner .banner__form {
@@ -237,29 +238,40 @@
 }
 .banner .banner__form i{
   top: 3.rem;
-  left: 105rem;
+  left: 98rem;
   position: absolute;
   color: #000000;
   font-size: 2rem;
 }
 .banner .banner__form i:hover{
-color: aqua;
+color: #4C5FD5;
 }
-/* .banner .banner__form i{
-  position: absolute;
-  width: 28px;
-  right: 15px;
-  bottom: -5px;
-} */
-.footer .footer__wrapper .btn__help{
+
+.banner .help__bottom a{
   position: fixed;
-  top: 57rem;
-  left: 123rem;
-  font-weight: 600;
+    margin-top: 15rem;
+    margin-left: 110rem;
+    float: right;
+    border-radius: 5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f5f5f5;
+    background: #4C5FD5;
+    border: 1px solid #4C5FD5;
+    padding: .8rem 1.8rem;
+    align-items: center;
 }
-.footer .footer__wrapper .btn__help i{
+
+.banner .help__bottom a:hover{
+  color: #ffffff;
+  background: #4C5FD5;
+}
+
+.banner .help__bottom i{
   margin-right: 1rem;
 }
+
+
 
 
 @media screen and (max-width:500px) {
@@ -436,6 +448,15 @@ font-size: 2rem;
 .footer .footer__text a{
   display: block;
 }
+.footer .footer__wrapper .help__buttom a{
+  position: fixed;
+  top: 53rem;
+  left: 37rem;
+  font-weight: 600;
+}
+.footer .footer__wrapper .btn__help i{
+  margin-right: 9rem;
+}
 
 @media screen and (max-width:500px) {
   .footer .footer__wrapper{
@@ -540,9 +561,4 @@ font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  .btn .help{
-    background:#4C5FD5;
-    color:#ffffff;
-    border:1px solid #4C5FD5;
   }
